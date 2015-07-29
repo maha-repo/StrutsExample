@@ -1,0 +1,142 @@
+C:\Users\Administrator\Documents\GitHub
+
+cf push SampleMaven2 -p target/SampleMaven2-1.jar
+cf logs SampleMaven3 --recent
+
+https://console.run.pivotal.io/organizations/d090c7fc-0489-433f-9b38-5fe79b6b5422#spaces
+https://help.github.com/articles/create-a-repo/
+https://travis-ci.org/
+http://docs.travis-ci.com/user/getting-started/
+http://docs.travis-ci.com/user/languages/java/
+http://docs.pivotal.io/pivotalcf/getstarted/
+
+
+C:\Users\Administrator\Documents\GitHub\SampleMaven>cf push SampleMaven2 -p target/Num1.jar
+Updating app SampleMaven2 in org Hackathon Project / space development as k.a.ravitej@gmail.com...
+OK
+
+Uploading SampleMaven2...
+Uploading app files from: target/Num1.jar
+Uploading 3.5K, 10 files
+Done uploading
+OK
+
+Stopping app SampleMaven2 in org Hackathon Project / space development as k.a.ravitej@gmail.com...
+OK
+
+Starting app SampleMaven2 in org Hackathon Project / space development as k.a.ravitej@gmail.com...
+-----> Downloaded app package (4.0K)
+    -----> Downloading IBM 1.7.0 JRE from http://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/jre/1.7.0/linux/ibm-java-jre-7.0-5.0-x86_64-archi
+       Expanding JRE to .java strings: '/lib/libc.so.6': No such file
+(14.9s)
+Downloading from http://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/8.5.5.2/wlp-developers-runtime-8.5.5.2.jar ... (0.0s).
+Installing archive ... (1.1s).
+
+-----> Uploading droplet (135M)
+
+0 of 1 instances running, 1 starting
+1 of 1 instances running
+
+App started
+
+
+OK
+
+App SampleMaven2 was started using this command `.liberty/create_vars.rb .liberty/usr/servers/defaultServer/runtime-vars.xml && JAVA_HOME="$PWD/.java" .liberty/bin/server
+
+Showing health and status for app SampleMaven2 in org Hackathon Project / space development as k.a.ravitej@gmail.com...
+OK
+
+requested state: started
+instances: 1/1
+usage: 1G x 1 instances
+urls: samplemaven2.cfapps.io
+last uploaded: Wed Jul 29 11:08:42 UTC 2015
+stack: cflinuxfs2
+buildpack: ibmjdk-1.7.0, liberty-8.5.5_2
+
+     state     since                    cpu    memory       disk           details
+#0   running   2015-07-29 04:10:22 AM   0.0%   147M of 1G   237.6M of 1G
+
+C:\Users\Administrator\Documents\GitHub\SampleMaven>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+C:\Users\Administrator\Documents\GitHub\StrutsExample>cf push SampleStruts -p target/StrutsExample.war
+Creating app SampleStruts in org Hackathon Project / space development as k.a.ravitej@gmail.com...
+OK
+
+Using route samplestruts.cfapps.io
+Binding samplestruts.cfapps.io to SampleStruts...
+OK
+
+Uploading SampleStruts...
+Uploading app files from: target/StrutsExample.war
+Uploading 108.8K, 22 files
+Done uploading
+OK
+
+Starting app SampleStruts in org Hackathon Project / space development as k.a.ravitej@gmail.com...
+-----> Downloaded app package (1.6M)
+    -----> Java Buildpack Version: v3.1 | https://github.com/cloudfoundry/java-buildpack.git#7a538fb
+-----> Downloading Open Jdk JRE 1.8.0_51 from https://download.run.pivotal.io/openjdk/trusty/x86_64/openjdk-1.8.0_51.tar.gz (1.1s)
+       Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.0s)
+-----> Downloading Open JDK Like Memory Calculator 1.1.1_RELEASE from https://download.run.pivotal.io/memory-calculator/trusty/x86_64/memory-calculator-1.1.1_RELEASE (0.2s)
+       Memory Settings: -XX:MaxMetaspaceSize=104857K -XX:MetaspaceSize=104857K -Xss1M -Xmx768M -Xms768M
+-----> Downloading Tomcat Instance 8.0.24 from https://download.run.pivotal.io/tomcat/tomcat-8.0.24.tar.gz (0.4s)
+       Expanding Tomcat to .java-buildpack/tomcat (0.1s)
+-----> Downloading Tomcat Lifecycle Support 2.4.0_RELEASE from https://download.run.pivotal.io/tomcat-lifecycle-support/tomcat-lifecycle-support-2.4.0_RELEASE.jar (0.0s)
+-----> Downloading Tomcat Logging Support 2.4.0_RELEASE from https://download.run.pivotal.io/tomcat-logging-support/tomcat-logging-support-2.4.0_RELEASE.jar (0.0s)
+-----> Downloading Tomcat Access Logging Support 2.4.0_RELEASE from https://download.run.pivotal.io/tomcat-access-logging-support/tomcat-access-logging-support-2.4.0_RELEASE.jar (0.0s)
+
+-----> Uploading droplet (53M)
+
+1 of 1 instances running
+
+App started
+
+
+OK
+
+App SampleStruts was started using this command `CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-1.1.1_RELEASE -memorySizes=metaspace:64m.. -memoryWeights=heap:75,metaspace:10,stack:5,native:10 -totMemory=$MEMO
+
+Showing health and status for app SampleStruts in org Hackathon Project / space development as k.a.ravitej@gmail.com...
+OK
+
+requested state: started
+instances: 1/1
+usage: 1G x 1 instances
+urls: samplestruts.cfapps.io
+last uploaded: Wed Jul 29 14:34:14 UTC 2015
+stack: cflinuxfs2
+buildpack: java-buildpack=v3.1-https://github.com/cloudfoundry/java-buildpack.git#7a538fb open-jdk-like-jre=1.8.0_51 open-jdk-like-memory-calculator=1.1.1_RELEASE tomcat-access-logging-support=2.4.0_RELEASE tomcat-instance=8.0.24 tomcat-lifecycle-suppor
+
+     state     since                    cpu    memory         disk           details
+#0   running   2015-07-29 07:34:45 AM   0.0%   195.6M of 1G   129.4M of 1G
+
+C:\Users\Administrator\Documents\GitHub\StrutsExample>cf push SampleStruts -p target/StrutsExample.war
